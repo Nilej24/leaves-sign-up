@@ -6,6 +6,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -75,18 +76,22 @@ body {
 	max-width: max(350px, 50vw);
 	height: 675px;
 	flex: 1 0 350px;
-
-	box-sizing: border-box;
-	padding-top: 100px;
+	padding-top: 75px;
 
 	background-color: #eee;
 }
 
+.right p {
+    font-weight: 500;
+    margin: 0 20px 20px;
+}
+
 .form-box {
-	height: 200px;
+	min-height: 200px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	padding: 10px 20px;
 
 	background-color: white;
 	box-shadow: grey 0 3px 10px;
@@ -99,6 +104,12 @@ body {
 
 .form-box .row {
 	display: flex;
+	flex-wrap: wrap;
+	margin: 8px 0;
+}
+
+.form-box .row div {
+	margin-right: 20px;
 }
 
 .form-box label {
@@ -113,4 +124,25 @@ body {
 	border-radius: 3px;
 	width: 200px;
 	height: 20px;
+}
+
+button {
+	width: 150px;
+	height: 30px;
+	margin: 20px;
+	
+	background-color: #596D48;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-weight: 600;
+}
+
+.has-account {
+	font-size: 0.8rem;
+}
+
+.has-account a {
+	color: #596D48;
+	text-decoration: none;
 }
