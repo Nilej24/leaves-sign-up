@@ -3,7 +3,16 @@
 	src: url("res/fonts/Norse-Bold.otf") format("opentype");
 }
 
-div {
-	font-family: Norse-Bold;
-	background-color: red;
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: rgba(0, 0, 0, 100);
+	font-family: Norse-Bold, sans-serif;
+	color: white;
+}
+
+img {
+	height: 100px;
 }
