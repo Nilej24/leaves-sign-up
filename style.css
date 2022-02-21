@@ -9,8 +9,22 @@
 }
 
 body {
+	height: 100vh;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	background-color: #111;
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	width: auto;
+
+	background-color: #eee;
 }
 
 .left {
@@ -58,5 +72,14 @@ img {
 }
 
 .right {
-	height: 600px;
+	max-width: max(350px, 50vw);
+	height: 675px;
+	flex: 1 0 350px;
+
+	background-color: #eee;
+}
+
+.field-box {
+	display: flex;
+	flex-wrap: wrap;
 }
