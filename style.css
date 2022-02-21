@@ -55,11 +55,11 @@ body {
 	font-size: 30px;
 }
 
-img {
+.hero img {
 	height: 80px;
 }
 
-.img-credit {
+.left p {
 	margin-bottom: 10px;
 	font-size: 15px;
 	color: white;
@@ -67,7 +67,7 @@ img {
 	text-align: center;
 }
 
-.img-credit a {
+.left a {
 	color: white;
 }
 
@@ -76,10 +76,41 @@ img {
 	height: 675px;
 	flex: 1 0 350px;
 
+	box-sizing: border-box;
+	padding-top: 100px;
+
 	background-color: #eee;
 }
 
-.field-box {
+.form-box {
+	height: 200px;
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+	background-color: white;
+	box-shadow: grey 0 3px 10px;
+}
+
+.form-box h2 {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.form-box .row {
+	display: flex;
+}
+
+.form-box label {
+	font-size: 0.7rem;
+	letter-spacing: 0.05rem;
+}
+
+.form-box input {
+	display: block;
+
+	border: #E5E7EB 1px solid;
+	border-radius: 3px;
+	width: 200px;
+	height: 20px;
 }
